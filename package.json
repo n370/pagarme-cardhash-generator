@@ -1,8 +1,11 @@
 {
-  "name": "pagarme-cardhash-generator",
+  "name": "@n370/pagarme-cardhash-generator",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
+  "bin": {
+    "pagarme-cardhash-generator": "./main.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

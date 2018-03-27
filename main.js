@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const inquirer = require('inquirer');
 const pagarme = require('pagarme');
 
@@ -35,4 +37,7 @@ inquirer.prompt([
     })
     .then(client => client.security.encrypt(card));
 })
-.then(card_hash => console.log(card_hash));
+.then(card_hash => {
+    console.log('Após gerado, o card_hash tem validade de 5 minutos. Além disso, ele pode ser utilizado uma única vez.\n');
+    console.log(card_hash);
+});
