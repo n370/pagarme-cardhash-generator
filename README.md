@@ -1,3 +1,5 @@
+# DEPRECADO. NÃO USE.
+
 ### Pagar.me Card Hash Generator
 ---
 
